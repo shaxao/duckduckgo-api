@@ -2,8 +2,10 @@ from itertools import islice
 
 from duckduckgo_search import DDGS
 from flask import Flask, request
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app, resources=r'/*') 
 
 
 def run():
