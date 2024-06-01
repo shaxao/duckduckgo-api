@@ -1,19 +1,19 @@
 {
   "builds": [
     {
-      "src": "/api/app.py",
+      "src": "app.py",
       "use": "@vercel/python"
     }
   ],
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api/app.py"
+      "source": "/(.*)",
+      "destination": "app.py"
     }
   ],
   "headers": [
     {
-      "source": "/api/(.*)",
+      "source": "/(.*)",
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
