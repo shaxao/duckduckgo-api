@@ -8,7 +8,7 @@
   "rewrites": [
     {
       "src": "/(.*)",
-      "destination": "app.py"
+      "destination": "/api/index"
     }
   ],
   "headers": [
